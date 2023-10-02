@@ -123,11 +123,15 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
+  background-color: white;
 }
 
-#header.header-scrolled,
+#header.header-scrolled{
+  background: rgba(255, 250, 250, 0.8);
+}
+
 #header.header-inner-pages {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(240, 240, 240, 0.8);
 }
 
 #header .logo {
@@ -141,7 +145,11 @@ h6 {
 }
 
 #header .logo a {
-  color: #fff;
+  color: #000000;
+}
+
+#header a {
+  color: black;
 }
 
 #header .logo a span {
@@ -150,6 +158,10 @@ h6 {
 
 #header .logo img {
   max-height: 75px;
+}
+
+#header i{
+  color: black;
 }
 
 /*--------------------------------------------------------------
@@ -208,7 +220,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 600;
-  color: #fff;
+  color: #050404;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -224,7 +236,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #ffc451;
+  color: #af731e !important;
 }
 
 .navbar .dropdown ul {
@@ -297,7 +309,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #ffffff;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -307,6 +319,7 @@ h6 {
 
 @media (max-width: 991px) {
   .mobile-nav-toggle {
+    color: white;
     display: block;
   }
 
@@ -322,7 +335,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   transition: 0.3s;
   z-index: 999;
 }
@@ -331,6 +344,7 @@ h6 {
   position: absolute;
   top: 15px;
   right: 15px;
+  color: white;
 }
 
 .navbar-mobile ul {
@@ -356,7 +370,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #151515;
+  color: #6b6a22;
   background-color: #ffc451;
 }
 
@@ -399,6 +413,9 @@ h6 {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
+
+
+
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -654,10 +671,12 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  border: 1px solid #ebebeb;
+  border: 1px solid #be9b27;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
+  height: 350px;
+  width: 300px;
 }
 
 .services .icon-box .icon {
